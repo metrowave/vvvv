@@ -1,0 +1,433 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv40beta17.dtd" >
+   <PATCH nodename="C:\Dokumente und Einstellungen\gregsn\Desktop\small setup\_root.v4p" componentmode="InAWindow">
+   <BOUNDS height="10620" left="10680" top="1020" type="Window" width="10680">
+   </BOUNDS>
+   <NODE componentmode="InAWindow" id="19" managers="boygroup" nodename="screen.v4p" path="C:\Dokumente und Einstellungen\gregsn\Desktop\small setup\">
+   <BOUNDS height="270" left="5850" top="5025" type="Node" width="900">
+   </BOUNDS>
+   <BOUNDS left="5850" top="5025" type="Box">
+   </BOUNDS>
+   <BOUNDS height="10620" left="10680" top="1020" type="Window" width="10680">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1">
+   </PIN>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1">
+   </PIN>
+   <PIN pinname="projection" visible="1">
+   </PIN>
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <PIN pinname="Slitscan" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" id="18" managers="" nodename="content (interactive).v4p" path="C:\Dokumente und Einstellungen\gregsn\Desktop\small setup\">
+   <BOUNDS height="100" left="3705" top="2445" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3600" left="3705" top="2445" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="10620" left="10680" top="1020" type="Window" width="10680">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Pause" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" id="17" managers="boygroup" nodename="content (video).v4p" path="C:\Dokumente und Einstellungen\gregsn\Desktop\small setup\">
+   <BOUNDS height="100" left="5760" top="2430" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3600" left="5760" top="2430" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="10620" left="10680" top="1020" type="Window" width="10680">
+   </BOUNDS>
+   <PIN pinname="Slitscan Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" id="16" managers="boygroup" nodename="camera.v4p" path="C:\Dokumente und Einstellungen\gregsn\Desktop\small setup\">
+   <BOUNDS height="270" left="3705" top="3330" type="Node" width="1050">
+   </BOUNDS>
+   <BOUNDS height="3600" left="3705" top="3330" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="10620" left="10680" top="1020" type="Window" width="10680">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Cone Content" visible="1">
+   </PIN>
+   <PIN pinname="debug layers" visible="1">
+   </PIN>
+   <PIN pinname="view" visible="1">
+   </PIN>
+   <PIN pinname="projection" visible="1">
+   </PIN>
+   <PIN pinname="viewport" visible="1">
+   </PIN>
+   <PIN pinname="Record" visible="1">
+   </PIN>
+   <PIN pinname="Cam Count" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Overlap" visible="1">
+   </PIN>
+   <PIN pinname="Gamma" visible="1">
+   </PIN>
+   <PIN pinname="Do All" visible="1">
+   </PIN>
+   <PIN pinname="ID" visible="1">
+   </PIN>
+   <PIN pinname="Tex Count Y" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Tex Count X" slicecount="1" values="5">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="19" dstpinname="Slitscan Content" srcnodeid="17" srcpinname="Slitscan Content">
+   <LINKPOINT x="5775" y="4050">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="19" dstpinname="Cone Content" srcnodeid="16" srcpinname="Cone Content">
+   </LINK>
+   <LINK dstnodeid="19" dstpinname="projection" srcnodeid="16" srcpinname="projection">
+   </LINK>
+   <LINK dstnodeid="19" dstpinname="view" srcnodeid="16" srcpinname="view">
+   </LINK>
+   <LINK dstnodeid="19" dstpinname="viewport" srcnodeid="16" srcpinname="viewport">
+   </LINK>
+   <NODE componentmode="InABox" id="15" managers="" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="7650" top="1740" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5216" top="3342" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="705" left="7650" top="1740" type="Box" width="720">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Slitscan Video|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="19" dstpinname="Slitscan" hiddenwhenlocked="1" srcnodeid="15" srcpinname="Y Output Value">
+   <LINKPOINT x="7710" y="4575">
+   </LINKPOINT>
+   </LINK>
+   <NODE hiddenwhenlocked="1" id="14" managers="" nodename="NOT (Boolean)">
+   <BOUNDS height="0" left="8295" top="3105" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="Input" srcnodeid="15" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="Record" hiddenwhenlocked="1" srcnodeid="14" srcpinname="Output">
+   </LINK>
+   <NODE componentmode="InABox" hiddenwhenlocked="1" id="13" managers="" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="1545" top="2145" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5166" top="4085" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="1020" left="1545" top="2145" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Show Connections" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="X Input Value" pintype="Input" slicecount="1" visible="0" values="2">
+   </PIN>
+   <PIN pinname="Slider Constraints" slicecount="1" values="scX">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Sticky Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Zoom">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="6">
+   </PIN>
+   </NODE>
+   <NODE hiddenwhenlocked="1" id="12" managers="" nodename="Quad (DX9)">
+   <BOUNDS height="0" left="165" top="3570" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Texture" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" hiddenwhenlocked="1" id="11" managers="" nodename="Renderer (EX9)">
+   <BOUNDS height="0" left="150" top="4050" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="3075" left="105" top="5580" type="Window" width="10260">
+   </BOUNDS>
+   <BOUNDS height="1800" left="150" top="4050" type="Box" width="2400">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projection Transform" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Layers" srcnodeid="12" srcpinname="Layer">
+   </LINK>
+   <NODE hiddenwhenlocked="1" id="10" managers="" nodename="Scale (Transform Vector)">
+   <BOUNDS height="0" left="1440" top="3570" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="Projection Transform" hiddenwhenlocked="1" srcnodeid="10" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="12" dstpinname="Texture" hiddenwhenlocked="1" srcnodeid="16" srcpinname="Cone Content">
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="XYZ" srcnodeid="13" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="9" managers="" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="3315" top="930" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="16890" top="3015" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="780" left="3315" top="930" type="Box" width="630">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Overlap">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="0.85">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="-0.5">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="16" dstpinname="Overlap" srcnodeid="9" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InAWindow" id="8" managers="boygroup" nodename="Renderer (EX9)">
+   <BOUNDS height="0" left="5850" top="6360" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="1770" left="105" top="8625" type="Window" width="10245">
+   </BOUNDS>
+   <BOUNDS height="1800" left="5850" top="6360" type="Box" width="2400">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Projection Transform" visible="1">
+   </PIN>
+   <PIN pinname="View Transform" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|final out|">
+   </PIN>
+   <PIN pinname="Fullscreen" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Layers" srcnodeid="19" srcpinname="Layers">
+   </LINK>
+   <NODE componentmode="InABox" id="7" managers="" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="6825" top="3000" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="15060" top="7950" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="390" left="6825" top="3000" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Client ID|">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="6" managers="" nodename="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="6030" top="3000" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6116" top="4242" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="390" left="6030" top="3000" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="All">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="16" dstpinname="Gamma" srcnodeid="5" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="Do All" srcnodeid="6" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="ID" srcnodeid="7" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="Layers" srcnodeid="18" srcpinname="Layers">
+   </LINK>
+   <NODE componentmode="Hidden" id="4" managers="" nodename="Renderer (TTY)">
+   <BOUNDS height="0" left="4620" top="8010" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="3105" left="6240" top="7920" type="Window" width="13185">
+   </BOUNDS>
+   <BOUNDS height="1800" left="4620" top="8010" type="Box" width="2400">
+   </BOUNDS>
+   </NODE>
+   <NODE componentmode="InAWindow" id="3" managers="" nodename="overview.v4p" path="C:\Dokumente und Einstellungen\gregsn\Desktop\small setup\">
+   <PIN pinname="Show Virtual Scene" visible="1">
+   </PIN>
+   <PIN pinname="show cams" visible="1">
+   </PIN>
+   <PIN pinname="show projectors" visible="1">
+   </PIN>
+   <PIN pinname="Physical Setup" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="cams" visible="1">
+   </PIN>
+   <PIN pinname="projectors" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Virtual Scene" visible="1">
+   </PIN>
+   <BOUNDS height="100" left="3315" top="6360" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3600" left="3315" top="6360" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="10620" left="10680" top="1020" type="Window" width="10680">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Video" visible="1">
+   </PIN>
+   <PIN pinname="debug layers" visible="1">
+   </PIN>
+   <PIN pinname="Debug" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="Virtual Scene" hiddenwhenlocked="1" srcnodeid="18" srcpinname="Layers">
+   <LINKPOINT x="3330" y="3135">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="3" dstpinname="cams" srcnodeid="16" srcpinname="debug layers">
+   <LINKPOINT x="5010" y="5310">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="3" dstpinname="Show Virtual Scene" hiddenwhenlocked="1" srcnodeid="2" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="2" managers="" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <BOUNDS height="0" left="165" top="6045" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="5816" top="3942" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="390" left="165" top="6045" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Virtual Scene|">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="3" dstpinname="show cams" srcnodeid="1" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="1" managers="" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <BOUNDS height="0" left="1215" top="6045" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="6116" top="4242" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="390" left="1215" top="6045" type="Box" width="450">
+   </BOUNDS>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Cams">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE id="0" nodename="Scale (Transform Vector)">
+   <BOUNDS height="0" left="7455" top="5940" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="3" values="2,2,2">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="8" dstpinname="Projection Transform" srcnodeid="0" srcpinname="Transform Out">
+   </LINK>
+   </PATCH>
